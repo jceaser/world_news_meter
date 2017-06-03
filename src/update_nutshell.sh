@@ -16,3 +16,5 @@ cnnNeg=$(egrep " flu| death| kill| war| rape| murder" ${CNN_FILE} | wc -l)
 cnnPos=$(egrep " art| love| peace| fun" ${CNN_FILE} | wc -l)
 
 echo ${NOW}, CNN, ${cnnNeg}, ${cnnPos} >> ${DATA_BASE}/all.data
+
+gnuplot ~/bin/chart.gnuplot
